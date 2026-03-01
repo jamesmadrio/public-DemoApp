@@ -21,7 +21,7 @@ test('Test Case 1', async ({ page }) => {
 	} else {
 		throw new Error("The target object does not exist."); 
 	}
-	//View "To Do" column
+	//Verify "To Do" column exist
 	if (await page.getByText('To Do (2)Implement user').isVisible()) {
 		await page.getByText('To Do (2)Implement user').click();
 	} else {
