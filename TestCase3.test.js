@@ -21,7 +21,7 @@ test('Test Case 3', async ({ page }) => {
 	} else {
 		throw new Error("The target object does not exist."); 
 	}
-	//Verify the "In Progress" column exist
+	//Verify "In Progress" column exist
 	if (await page.getByText('In Progress (1)Design system').isVisible()) {
 		await page.getByText('In Progress (1)Design system').click();
 	} else {
